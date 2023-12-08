@@ -4,8 +4,89 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>윤영민 포트폴리오</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/swiper.min.css"><link rel="stylesheet" href="./css/aos.css">
 </head>
 <body>
-  <p>윤영민 포트폴리오</p>
+  <!-- 인트로 -->
+  <div id="intro">
+    <div class="intro-page">
+      <span class="logo"><img src="./img/yymim.png" alt="윤영민" width="688" height="137"></span>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(".intro-page").delay(1900).fadeOut(2000, 'swing');
+        $(".intro-page span").delay(300).animate({ "width": "688px" }, 1000, 'swing');
+      });
+    </script>
+  </div>
+  <!-- 간단 인사 -->
+  <section id="section01">
+    <div class="main-visual">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="img__wrap img01"></div>
+          <div class="slogan__wrap">
+            <div class="side">안녕하세요</div>
+            <div class="title">3년차 프론트엔드 개발자로 성장한</div>
+            <div class="text">웹 개발자 윤영민 입니다.</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img__wrap img02"></div>
+          <div class="slogan__wrap">
+            <div class="side">안녕하세요</div>
+            <div class="title">3년차 프론트엔드 개발자로 성장한</div>
+            <div class="text">웹 개발자 윤영민 입니다.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 작업물 -->
+  <section id="section02">
+    <div class="content-box">
+      <div class="img__wrap">
+        <div class="background"><img src="./img/section02-con01-bg.png" alt="배경이미지"></div>
+        <div class="icon"><img src="./img/section02-con01-img.png" alt="이미지"></div>
+      </div>
+      <div class="text__wrap">
+        <p class="strong">CSS</p>를 이용하여 이렇게 역동적인 표현도 할 수 있고,
+      </div>
+    </div>
+  </section>
+  <!-- 자기소개서 -->
+  <section id="section03">
+    <div class="text-box">
+      저는 고객사의 홈페이지를 제작하는 업체에서 
+      <p class="strong">HTML, CSS, PHP, JavaScript</p>를 이용하여 퍼블리싱 및 프론트엔드 작업을 책임지며,<br>
+      1년 동안은 개발팀의 <p class="strong">팀장</p>으로 활동했습니다.화면을 구성하는 작업으로 인해 제 작업 결과가 즉각적으로 시각화되어 성취감을 느낄 수 있어 특히 만족스럽게 느껴지고 있습니다.
+      끊임없이 변화하는 개발 세계에서 안정적으로 성장하기 위해 현재 진행 중인 업무에 최선을 다하고 있습니다. 미래에는 어떤 프로그램이나 플랫폼이 나올지 예측하기 어렵지만, 현재의 업무에 주안점을 두고 필요한 경우 신기
+      술이나 새로운 기회에 적극적으로 대응하여 발전시키는 것이 중요하다고 생각하고 있습니다. 이는 장기적인 성장과 지속적인 발전을 추구하는 데 중점을 둔 가치관을 반영하고 있습니다.
+      저는 반복 작업에 그치지 않고 작업 원리를 활용하여 효율적으로 업무를 수행하려는 노력을 기울이고 있습니다.
+      동일한 작업이라도 작업 원리를 이해하고 적용함으로써 빠른 진행 속도를 유지하고 있습니다.
+      최근 3년간 꾸준한 경력 쌓기와 함께 개발팀 팀장으로 활동하며 안정적으로 인정받았지만, 끊임없는 도전을 추구하며 자기개발을 위한 이직 결심을 했습니다. 이를 통해 개발 공부에 전념하며 프론트엔드 개발자로의 전환을
+      성취하였습니다.
+      저의 입사 후 목표는 먼저 프론트엔드 개발 분야에서 높은 역량을 쌓는 것입니다. 그리고 그 이후에는 백엔드 개발도 습득하여 풀스택 개발자로 성장하고자 합니다. 새로운 기술에 열린 마음을 가지고 틀에 갇히지 않고
+      발전하
+      는 기술들을 적극적으로 받아들이며, 끊임없는 자기개발을 소홀히 하지 않는 개발자로 성장하겠습니다.
+    </div>
+    <div class="content">
+      <p class="count-number num02 mft" data-count="50"></p>
+      <p class="side">건</p>
+    </div>
+  </section>
+  <!-- 이력 -->
+  <section id="section05">
+    <div class="ocean">
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+  </section>
+
+  <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/aos.js"></script>
+  <script src="./js/swiper.min.js"></script>
 </body>
 </html>
