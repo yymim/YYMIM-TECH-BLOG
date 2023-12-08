@@ -17,7 +17,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 15px;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Pretendard-Regular', 'Noto Sans KR', sans-serif;
   letter-spacing: -1px;
   word-break: keep-all;
 }
@@ -174,6 +174,7 @@ select:focus {
   height: 100vh;
   display: none;
 }
+
 #intro .intro-page {
   width: 100%;
   height: 100vh;
@@ -204,6 +205,8 @@ select:focus {
 #section01 {
   transition-delay: 1s;
   position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 
 #section01 .main-visual {
@@ -239,7 +242,7 @@ select:focus {
 
 #section01 .slogan__wrap {
   position: relative;
-  width: 770px;
+  width: 860px;
   margin: 0 auto;
   top: 30vh;
   color: #000;
@@ -252,14 +255,15 @@ select:focus {
   opacity: 0;
   letter-spacing: 1px;
   font-weight: 800;
-  text-shadow: 0 0 5px #6e6e6e;
+  text-shadow: 0 0 5px #000000;
+  color: #fff;
   font-family: 'OpenSans';
-  text-align: right;
+  text-align: left;
   margin-bottom: 10px;
 }
 
 #section01 .slogan__wrap .title {
-  font-size: 82px;
+  font-size: 64px;
   font-weight: 400;
   transform: translateY(1em);
   opacity: 0;
@@ -274,10 +278,10 @@ select:focus {
 }
 
 #section01 .slogan__wrap .text {
-  font-size: 26px;
+  font-size: 32px;
   transform: translateY(1em);
   opacity: 0;
-  margin-top: 50px;
+  margin-top: 30px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -340,12 +344,16 @@ select:focus {
   color: #a81e1d;
 }
 
-#section02 {}
+#section02 {
+  padding: 80px 100px;
+}
 
 #section02 .content-box {
   display: flex;
   flex-wrap: wrap;
-  min-height: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin: 30px 0;
 }
 
 #section02 .content-box .img__wrap {
@@ -356,12 +364,16 @@ select:focus {
 #section02 .content-box .img__wrap .background {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: -1;
 }
 
 #section02 .content-box .img__wrap .icon {
   width: 100px;
+  position: absolute;
+  right: 15%;
+  top: 10%;
 }
 
 #section02 .content-box .img__wrap .icon img {
@@ -385,12 +397,26 @@ select:focus {
 
 #section02 .content-box .text__wrap {
   width: 60%;
+  padding-left: 100px;
+  display: table;
+}
+
+#section02 .content-box .text__wrap .text {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 #section02 .content-box .text__wrap .strong {
   font-size: 20px;
   display: inline-block;
   font-weight: 600;
+}
+
+#section03 {
+  background: url('../img/section03-background.png');
+  background-attachment: fixed;
+  height: 100vh;
+  background-size: cover;
 }
 
 #section05 {
