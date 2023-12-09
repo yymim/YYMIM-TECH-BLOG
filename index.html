@@ -10,16 +10,10 @@
 </head>
 <body>
   <!-- 인트로 -->
-  <div id="intro">
+  <div id="intro" style="display: none;">
     <div class="intro-page">
       <span class="logo"><img src="./img/yymim.png" alt="윤영민" width="688" height="137"></span>
     </div>
-    <script>
-      $(document).ready(function () {
-        $(".intro-page").delay(1900).fadeOut(2000, 'swing');
-        $(".intro-page span").delay(300).animate({ "width": "688px" }, 1000, 'swing');
-      });
-    </script>
   </div>
   <!-- 간단 인사 -->
   <section id="section01">
@@ -47,38 +41,201 @@
   <!-- 작업물 -->
   <section id="section02">
     <div class="content-box">
+      <div class="con-box con01">
+        <p class="title">작업 기간</p>
+        <p class="count-number num01 mft" data-count="38"></p>
+        <p class="side">개월</p>
+      </div>
+      <div class="con-box con01">
+        <p class="title">총 작업 수</p>
+        <p class="count-number num02 mft" data-count="53"></p>
+        <p class="side">건</p>
+      </div>
+    </div>
+    <div class="content-box career">
+      <!-- 이미지 박스 넣어서 링크 추가 -->
+      <div class="box__wrap">
+        <ul>
+          <li>
+            <a href="http://gntourism.co.kr/" target="_blank">
+              <div class="img__box">
+                <img src="./img/parrot.png" alt="">
+              </div>
+              <div class="text__box">
+                <p class="title">경남관광온라인플랫폼</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="http://58.229.253.246/~ilkwangmetal/" target="_blank">
+              <div class="img__box">
+                <img src="./img/parrot.png" alt="">
+              </div>
+              <div class="text__box">
+                <p class="title">일광금속</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="http://anhsystems.com/" target="_blank">
+              <div class="img__box">
+                <img src="./img/parrot.png" alt="">
+              </div>
+              <div class="text__box">
+                <p class="title">ANH시스템즈</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="http://xn--3j1bw2bt0k5qhp6z.com/" target="_blank">
+              <div class="img__box">
+                <img src="./img/parrot.png" alt="">
+              </div>
+              <div class="text__box">
+                <p class="title">경동이앤에스</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.hcvacance.kr/" target="_blank">
+              <div class="img__box">
+                <img src="./img/parrot.png" alt="">
+              </div>
+              <div class="text__box">
+                <p class="title">2022 합천바캉스 축제</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://sancheong-expo.or.kr/" target="_blank">
+              <div class="img__box">
+                <img src="./img/parrot.png" alt="">
+              </div>
+              <div class="text__box">
+                <p class="title">산청항노화엑스포</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="http://grandnoodle.co.kr/" target="_blank">
+              <div class="img__box">
+                <img src="./img/parrot.png" alt="">
+              </div>
+              <div class="text__box">
+                <p class="title">거창한국수</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.angelux.co.kr/" target="_blank">
+              <div class="img__box">
+                <img src="./img/parrot.png" alt="">
+              </div>
+              <div class="text__box">
+                <p class="title">엔젤럭스</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://warosalad.com/" target="_blank">
+              <div class="img__box">
+                <img src="./img/parrot.png" alt="">
+              </div>
+              <div class="text__box">
+                <p class="title">와로샐러드</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- 단순 리스트 -->
+      <div class="list__wrap">
+        <ul>
+          <li>신흥타이어</li>
+          <li>신흥타이어</li>
+          <li>신흥타이어</li>
+          <li>신흥타이어</li>
+          <li>신흥타이어</li>
+          <li>신흥타이어</li>
+          <li>신흥타이어</li>
+        </ul>
+      </div>
+    </div>
+    <div class="content-box animation">
       <div class="img__wrap">
         <div class="background"><img src="./img/section02-con01-bg.png" alt="배경이미지"></div>
         <div class="icon"><img src="./img/section02-con01-img.png" alt="이미지"></div>
       </div>
       <div class="text__wrap">
         <div class="text">
-        <p class="strong">CSS</p>를 이용하여 이렇게 역동적인 표현도 할 수 있고,</div>
-        <p>git test2</p>
-        <p>git 1208 test</p>
+        건강을 위해 <p class="strong">헬스</p>도 꾸준히 다니고,</div>
+      </div>
+    </div>
+    <div class="content-box dday">
+      <div class="text__wrap">
+        <div class="text">
+          <p class="strong">크리스마스</p>를 항상 기다리고,
+        </div>
+      </div>
+      <div class="img__wrap">
+        <div class="dday df">
+          <p class="txt-bx">D</p>
+          <p class="txt-bx">-</p>
+          <p id="remain-time" class="txt-bx"></p>
+        </div>
+      </div>
+    </div>
+    <div class="content-box hover">
+      <div class="con-bx con01">
+        <a href="#">
+          <div class="img"><img src="./img/section02-con03-icon01.png" alt="이미지" title=""></div>
+          <div class="txt">
+            <p class="ttl">숨어있던 제목</p>
+            <p class="add">설명 텍스트</p>
+          </div>
+        </a>
+      </div>
+      <div class="con-bx con02">
+        <a href="#">
+          <div class="img"><img src="./img/section02-con03-icon02.png" alt="이미지" title=""></div>
+          <div class="txt">
+            <p class="ttl">숨어있던 제목</p>
+            <p class="add">설명 텍스트</p>
+          </div>
+        </a>
+      </div>
+      <div class="con-bx con03">
+        <a href="#">
+          <div class="img"><img src="./img/section02-con03-icon03.png" alt="이미지" title=""></div>
+          <div class="txt">
+            <p class="ttl">숨어있던 제목</p>
+            <p class="add">설명 텍스트</p>
+          </div>
+        </a>
+      </div>
+      <div class="con-bx con04">
+        <a href="#">
+          <div class="img"><img src="./img/section02-con03-icon04.png" alt="이미지" title=""></div>
+          <div class="txt">
+            <p class="ttl">숨어있던 제목</p>
+            <p class="add">설명 텍스트</p>
+          </div>
+        </a>
       </div>
     </div>
   </section>
   <!-- 자기소개서 -->
   <section id="section03">
     <div class="text-box">
-      저는 고객사의 홈페이지를 제작하는 업체에서 
-      <p class="strong">HTML, CSS, PHP, JavaScript</p>를 이용하여 퍼블리싱 및 프론트엔드 작업을 책임지며,<br>
-      1년 동안은 개발팀의 <p class="strong">팀장</p>으로 활동했습니다.화면을 구성하는 작업으로 인해 제 작업 결과가 즉각적으로 시각화되어 성취감을 느낄 수 있어 특히 만족스럽게 느껴지고 있습니다.
-      끊임없이 변화하는 개발 세계에서 안정적으로 성장하기 위해 현재 진행 중인 업무에 최선을 다하고 있습니다. 미래에는 어떤 프로그램이나 플랫폼이 나올지 예측하기 어렵지만, 현재의 업무에 주안점을 두고 필요한 경우 신기
-      술이나 새로운 기회에 적극적으로 대응하여 발전시키는 것이 중요하다고 생각하고 있습니다. 이는 장기적인 성장과 지속적인 발전을 추구하는 데 중점을 둔 가치관을 반영하고 있습니다.
-      저는 반복 작업에 그치지 않고 작업 원리를 활용하여 효율적으로 업무를 수행하려는 노력을 기울이고 있습니다.
-      동일한 작업이라도 작업 원리를 이해하고 적용함으로써 빠른 진행 속도를 유지하고 있습니다.
-      최근 3년간 꾸준한 경력 쌓기와 함께 개발팀 팀장으로 활동하며 안정적으로 인정받았지만, 끊임없는 도전을 추구하며 자기개발을 위한 이직 결심을 했습니다. 이를 통해 개발 공부에 전념하며 프론트엔드 개발자로의 전환을
-      성취하였습니다.
-      저의 입사 후 목표는 먼저 프론트엔드 개발 분야에서 높은 역량을 쌓는 것입니다. 그리고 그 이후에는 백엔드 개발도 습득하여 풀스택 개발자로 성장하고자 합니다. 새로운 기술에 열린 마음을 가지고 틀에 갇히지 않고
-      발전하
-      는 기술들을 적극적으로 받아들이며, 끊임없는 자기개발을 소홀히 하지 않는 개발자로 성장하겠습니다.
+      저는 여러 고객사의 홈페이지를 제작하는 업체에서 <span class="bd5">HTML, CSS, PHP, JavaScript</span>를 이용하여 퍼블리싱 및 프론트엔드 작업을 책임지며 <br>기업소개를 위한 일반 홈페이지부터 재고관리를 위한 대시보드, 쇼핑몰 등 다양한 홈페이지를 개발하였고,<br>
+      1년 동안은 개발팀의 <span class="bd5">팀장</span>으로 활동했습니다.화면을 구성하는 작업으로 인해 제 작업 결과가 즉각적으로 시각화되어 성취감을 느낄 수 있어 특히 만족스럽게 느껴지고 있습니다.<br>
+      끊임없이 변화하는 개발 세계에서 안정적으로 성장하기 위해 현재 진행 중인 업무에 최선을 다하고 있습니다. 미래에는 어떤 프로그램이나 플랫폼이 나올지 예측하기 어렵지만, 현재의 업무에 주안점을 두고 필요한 경우 신기술이나 새로운 기회에 적극적으로 대응하여 발전시키는 것이 중요하다고 생각하고 있습니다. 이는 장기적인 성장과 지속적인 발전을 추구하는 데 중점을 둔 가치관을 반영하고 있습니다.<br>
+      저는 반복 작업에 그치지 않고 작업 원리를 활용하여 효율적으로 업무를 수행하려는 노력을 기울이고 있습니다.<br>
+      동일한 작업이라도 작업 원리를 이해하고 적용함으로써 빠른 진행 속도를 유지하고 있습니다.<br>
+      최근 3년간 꾸준한 경력 쌓기와 함께 개발팀 팀장으로 활동하며 안정적으로 인정받았지만, 끊임없는 도전을 추구하며 자기개발을 위한 이직 결심을 했습니다. 이를 통해 개발 공부에 전념하며 프론트엔드 개발자로의 전환을 성취하였습니다.<br>
+      저의 입사 후 목표는 먼저 프론트엔드 개발 분야에서 높은 역량을 쌓는 것입니다. 그리고 그 이후에는 백엔드 개발도 습득하여 풀스택 개발자로 성장하고자 합니다. 새로운 기술에 열린 마음을 가지고 틀에 갇히지 않고 발전하는 기술들을 적극적으로 받아들이며, 끊임없는 자기개발을 소홀히 하지 않는 개발자로 성장하겠습니다.
     </div>
-    <div class="content">
-      <p class="count-number num02 mft" data-count="50"></p>
-      <p class="side">건</p>
-    </div>
+    
   </section>
   <!-- 이력 -->
   <section id="section05">
