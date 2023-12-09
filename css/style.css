@@ -392,15 +392,24 @@ select:focus {
 }
 
 #section02 .content-box.career .box__wrap ul li {
-  width: calc(100%/3 - 15px);
-  margin: 10px 0;
+  width: calc(25% - 20px);
+  margin: 15px 0;
 }
 
 #section02 .content-box.career .box__wrap ul li a {}
 
-#section02 .content-box.career .box__wrap ul li a .img__box {}
+#section02 .content-box.career .box__wrap ul li a .img__box {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border: 1px solid #e3e3e3;
+}
 
-#section02 .content-box.career .box__wrap ul li a .text__box {}
+#section02 .content-box.career .box__wrap ul li a .img__box img {}
+
+#section02 .content-box.career .box__wrap ul li a .text__box {
+  font-size: 0;
+}
 
 #section02 .content-box.career .list__wrap {
   width: 100%;
