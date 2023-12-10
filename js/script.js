@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+    /* 인트로 */
+    $(window).load(function(){
+      $(".intro-page").delay(1900).fadeOut(2000, 'swing');
+      $(".intro-page span").delay(300).animate({ "width": "688px" }, 1000, 'swing');
+    });
+
     /*      section01      */
     /* 메인 배경화면 슬라이드 */
     $(window).load(function(){
@@ -43,8 +49,8 @@ $(document).ready(function(){
     var isAnimated = false;
 
     $(window).scroll(function () {
-        // .section01의 상단 위치와 윈도우의 스크롤 위치를 비교
-        var sectionOffsetTop = $('#section01').offset().top;
+        // .section02의 상단 위치와 윈도우의 스크롤 위치를 비교
+        var sectionOffsetTop = $('#section02').offset().top;
         var windowHeight = $(window).height();
         var scrollTop = $(window).scrollTop();
 
@@ -73,4 +79,24 @@ $(document).ready(function(){
             });
         }
     });
+
+    /* d-day */
+    const remainTime = document.querySelector("#remain-time");
+
+    function diffDay() {
+      const masTime = new Date("2024-12-25");
+      const todayTime = new Date();
+
+      const diff = masTime - todayTime;
+
+      const diffDay = Math.floor(diff / (1000 * 60 * 60 * 24));
+      //const diffHour = Math.floor((diff / (1000*60*60)) % 24);
+      //const diffMin = Math.floor((diff / (1000*60)) % 60);
+      //const diffSec = Math.floor(diff / 1000 % 60);
+
+      remainTime.innerText = `${diffDay}`;
+    }
+
+    diffDay();
+    setInterval(diffDay, 1000);
 });
