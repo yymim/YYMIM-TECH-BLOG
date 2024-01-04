@@ -205,6 +205,23 @@ select:focus {
   max-width: unset;
 }
 
+/* HEADER OR ASIDE */
+#header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  padding: 10px 20px;
+}
+
+#header ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+#header ul li{
+  margin: 0 10px;
+}
+
 #section01 {
   transition-delay: 1s;
   position: relative;
@@ -218,7 +235,7 @@ select:focus {
 }
 
 #section01 .swiper-slide {
-  height: 908px;
+  height: 100vh;
 }
 
 #section01 .img__wrap {
@@ -234,59 +251,65 @@ select:focus {
 }
 
 #section01 .img__wrap.img01 {
-  background: url('../img/main-visual01.jpg')no-repeat center;
+  background: url('../img/main-visual05.jpg')no-repeat center;
   background-size: cover;
 }
 
 #section01 .img__wrap.img02 {
-  background: url('../img/main-visual02.png')no-repeat center;
+  background: url('../img/main-visual06.jpg')no-repeat center;
   background-size: cover;
 }
 
 #section01 .slogan__wrap {
   position: relative;
-  width: 860px;
+  width: 1300px;
   margin: 0 auto;
-  top: 30vh;
+  top: 25vh;
   color: #000;
   text-align: center;
 }
 
-#section01 .slogan__wrap .side {
-  font-size: 1.250em;
+#section01 .slogan__wrap .text01 {
+  font-size: 32px;
   transform: translateY(1em);
   opacity: 0;
-  letter-spacing: 1px;
-  font-weight: 800;
+  letter-spacing: -1px;
   text-shadow: 0 0 5px #000000;
   color: #fff;
-  font-family: 'OpenSans';
   text-align: left;
-  margin-bottom: 10px;
+  font-family: 'Giants-Bold';
 }
 
-#section01 .slogan__wrap .title {
-  font-size: 64px;
-  font-weight: 400;
+#section01 .slogan__wrap .text02 {
+  font-size: 52px;
   transform: translateY(1em);
   opacity: 0;
+  color: #fff;
+  text-shadow: 0 0 5px #000000;
+  margin: 50px 0;
+  font-family: 'KBO-Dia-Gothic_bold';
 }
 
-#section01 .slogan__wrap .title .title__box {
-  display: inline-block;
-  font-weight: 700;
-  background: url('../img/tiger.jpg')no-repeat center;
-  background-size: cover;
-  padding: 0 15px;
+#section01 .slogan__wrap .text03 {
+  font-size: 28px;
+  transform: translateY(1em);
+  opacity: 0;
+  /* margin-top: 30px; */
+  color: #fff;
+  text-shadow: 0 0 5px #000000;
+  font-family: 'ChosunSg';
+  text-align: right;
 }
 
-#section01 .slogan__wrap .text {
+#section01 .slogan__wrap .text04 {
   font-size: 32px;
   transform: translateY(1em);
   opacity: 0;
   margin-top: 30px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  text-shadow: 0 0 5px #000000;
+  font-family: 'ChosunSg';
+  text-align: right;
 }
 
 #section01 .swiper-slide-active .img__wrap,
@@ -296,20 +319,27 @@ select:focus {
   transition-delay: unset;
 }
 
-#section01 .swiper-slide-active .slogan__wrap .side {
+#section01 .swiper-slide-active .slogan__wrap .text01 {
   transform: translateY(0);
   opacity: 1;
   transition-duration: 1s
 }
 
-#section01 .swiper-slide-active .slogan__wrap .title {
+#section01 .swiper-slide-active .slogan__wrap .text02 {
   transform: translateY(0);
   opacity: 1;
   transition-duration: 1s;
   transition-delay: .5s
 }
 
-#section01 .swiper-slide-active .slogan__wrap .text {
+#section01 .swiper-slide-active .slogan__wrap .text03 {
+  transform: translateY(0);
+  opacity: 1;
+  transition-duration: 1s;
+  transition-delay: 1s
+}
+
+#section01 .swiper-slide-active .slogan__wrap .text04 {
   transform: translateY(0);
   opacity: 1;
   transition-duration: 1s;
@@ -429,7 +459,37 @@ select:focus {
   margin: 15px 0;
 }
 
-#section02 .content-box.career .box__wrap ul li a {}
+#section02 .content-box.career .box__wrap ul li a {
+    position: relative;
+}
+#section02 .content-box.career .box__wrap ul li a:before{
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all ease 0.3s;
+}
+#section02 .content-box.career .box__wrap ul li a:hover:before{
+  opacity: 1;
+}
+#section02 .content-box.career .box__wrap ul li a:after{
+  display: block;
+  content: '바로가기';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  opacity: 0;
+  transition: all ease 0.3s;
+}
+#section02 .content-box.career .box__wrap ul li a:hover:after{
+  opacity: 1;
+}
 
 #section02 .content-box.career .box__wrap ul li a .img__box {
   width: 100%;
