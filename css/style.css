@@ -259,6 +259,7 @@
   transform: translate(-50%, 50%);
   opacity: 0;
   transition: all ease 0.3s;
+  color: #fff;
 }
 
 #projects .content-box .box__wrap ul li a:hover:after {
