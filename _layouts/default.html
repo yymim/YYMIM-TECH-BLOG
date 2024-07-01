@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="en">
 
-  {%- include head.html -%}
+{% include head.html %}
 
-  <body>
+<body>
 
-    {%- include views/header.html -%}
+  {% if site.data.settings.google-analytics %}
+  {% include google-analytics.html %}
+  {% endif %}
 
-    {%- include views/banner.html -%}
+  {% include header.html %}
 
-    {%- include extensions/hashlocate.html -%}
+  <!-- begin content -->
+  <main class="content" aria-label="Content">
+    {{ content }}
+  </main>
+  <!-- end content -->
 
-    {%- include extensions/theme-toggle.html -%}
+  <div class="top ion ion-ios-arrow-up" title="Top"></div>
 
-    {%- include extensions/click-to-top.html -%}
+  {% include search.html %}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+  {% include footer.html %}
 
-    {%- include views/footer.html -%}
+  {% include javascripts.html %}
+</body>
 
-  </body>
 </html>
