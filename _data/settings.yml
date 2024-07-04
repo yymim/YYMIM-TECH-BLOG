@@ -2,7 +2,7 @@
 # General Site Settings
 title: YYMIM
 logo: logo.svg # You can add own logo.
-description: yymim and blog
+description: yymim blog
 
 
 #-------------------------------
@@ -10,8 +10,8 @@ description: yymim and blog
 author:
   name: Yeongmin
   image: 01.jpg
-  say-hello: <strong>혁신적인 경험</strong>을 선사하는<br>개발자
-  bio: 혁신적인 경험을 선사하는 개발자
+  say-hello: <strong>개발</strong> 블로그
+  bio: 윤영민
 
 
 #-------------------------------
