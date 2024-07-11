@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "통합구현"
+title:  "정보처리기사 - 통합구현"
 date:   2024-07-09 06:00:00 +0300
 image:  
-tags:   Jekyll
+tags:   정보처리기사
 ---
 
 # 연계 방식
