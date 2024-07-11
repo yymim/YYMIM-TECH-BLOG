@@ -235,6 +235,52 @@
 
 
 /********************* YYMIM **************************/
-.df_table{
-  font-size: 15px;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  padding: 0;
+  margin: 2rem 0 2rem;
+
+  tr {
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+
+    &:nth-child(2n) {
+      background-color: #f8f8f8;
+    }
+
+    th {
+      font-weight: 700;
+      border: 1px solid #ccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px;
+      font-weight: 600;
+
+      :first-child {
+        margin-top: 0;
+      }
+
+      :last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    td {
+      border: 1px solid #ccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px;
+
+      :first-child {
+        margin-top: 0;
+      }
+
+      :last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
