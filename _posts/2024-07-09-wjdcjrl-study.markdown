@@ -28,7 +28,7 @@ tags:   정보처리기사
 # 내외부 연계 모듈 구현
 
 ### EAI
-* Enterprise Service Bus
+* Enterprise Application Intergration
 * 기업에서 운영되는 서로 다른 플랫폼 및 애플리케이션 간의 정보를 전달, 연계, 통합이 가능하도록 해주는 솔루션
 * 각 비즈니스 간 통합 및 연계성 증대, 효율성 및 확장성을 높임
 
